@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <title>
+        Place Holder
+    </title>
+    <script src="./js/mydata.js"></script>
+    <script src="./js/jquery.js" onload="window.$ = window.jQuery = module.exports;"></script>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/logic.js"></script>
+</head>
+
+<body>
+
+    <div class="row" style="height: 95%;">
+        <div class="col-3">
+            <div class="row" style="margin-left: 20px; margin-top: 15px;"><a href="../"><img src="./images/back.png" height="30px"></a>
+                <h3 id="title"></h3>
+            </div>
+            <!--Side Loader-->
+            <div id="accordionEx" role="tablist" aria-multiselectable="true"
+                style="margin-left: 20px; margin-top: 20px;">
+                <div id="generated">
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Frame Starts here -->
+        <div class="col-9">
+            <img id="main_image" width="98%" height="94%" alt="Slide not available">
+
+            <div class="row justify-content-around" style="margin-top: 20px;" id="options">
+                <button class="learn-more" id="prev" onclick="prev()">
+
+                    <span class="circle" aria-hidden="false">
+                        <span class="icon arrow"></span>
+                    </span>
+                    <span class="button-text">Previous</span>
+                </button>
+
+                <span>
+                    <h3 id="status">1</h3>
+                </span>
+                /
+                <span>
+                    <h3 id="chapterLength"></h3>
+                </span>
+
+                <button class="learn-more" id="next" onclick="next()">
+                    <span class="circle" aria-hidden="true">
+                        <span class="icon arrow"></span>
+                    </span>
+                    <span class="button-text">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
